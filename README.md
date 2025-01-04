@@ -4,9 +4,11 @@ searches for feature flags in responses and flags them as issues. not perfect bu
 # installation
 - install standalone [jython](https://repo1.maven.org/maven2/org/python/jython-standalone/2.7.2/jython-standalone-2.7.2.jar) version 2.7.2 for your python environment in burp
 - add flagfinder.py to your extensions
+ez 😎
 
 # usage
 - when flags are found, the issue doesn't highlight in the response where the feature flags are, so you can run a regex like the following to find it:
 ```re
 (is|is_|enable|disable|toggle|show|hide)[a-z]+\w*":\w*(true|false|1|0)
 ```
+![featureflagfinder](https://github.com/user-attachments/assets/91a30031-9ff3-4f1e-a976-e6af931bfc50)
